@@ -7,6 +7,14 @@ class Player {
         this.tokens = this.createTokens(21);
     }
     
+    get unusedTokens() {
+        return this.tokens.filter(token => !token.dropped);
+    }
+    
+    get activeToken() {
+        return this.unusedTokens[0];
+    }
+    
     createTokens(num) {
         let tokens = []
         for(let i=0; i<num; i++) {
@@ -15,6 +23,10 @@ class Player {
         }
         
         return tokens;
+    }
+    
+    checkTokens() {
+        return this.unusedTokens.length == 0 ? false : true;
     }
 }
 

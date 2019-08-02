@@ -2,10 +2,10 @@ class Board {
     constructor() {
         this.rows = 6;
         this.columns = 7;
-        this.spaces = createSpaces();
+        this.spaces = this.createSpaces();
     }
     
-    createSpace(){
+    createSpaces(){
         const spaces = [];
         
         for(let x=0; x<this.columns; x++) {
