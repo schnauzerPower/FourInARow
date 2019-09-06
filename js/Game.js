@@ -77,16 +77,6 @@ class Game {
             }
             
         }
-        /*this.checkForWin(target) ? this.gameOver("You are a winner!!") : this.switchPlayers();
-        const hasActiveToken = this.activePlayer.checkTokens();
-        const activeToken = this.activePlayer.activeToken;
-        if(hasActiveToken) {
-            activeToken.drawHTMLToken();
-            this.ready = true;
-        }
-        else {
-          this.gameOver("You ran out of tokens");  
-        }*/
     }
     
     switchPlayers() {
